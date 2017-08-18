@@ -1,0 +1,29 @@
+{
+  "name": "eventsearcher",
+  "version": "1.0.0",
+  "description": "Event Searching App with NodeJS,Angular2 and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crossgiver/Event-Searcher-App.git"
+  },
+  "keywords": [
+    "MEAN",
+    "Stack",
+    "Angular2",
+    "Application"
+  ],
+  "author": "Cross Giver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crossgiver/Event-Searcher-App/issues"
+  },
+  "homepage": "https://github.com/Crossgiver/Event-Searcher-App#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  }
+}
