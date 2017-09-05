@@ -1,0 +1,7 @@
+<div class="margin-top page-header">
+  <input class="form-control mr-sm-2" type="text" placeholder="Search events" aria-label="Search" [(ngModel)]="eventName" />
+  <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="searchEvent(eventName)">Search</button>
+  <ng2-map zoom="4" center="0, 0">
+    <marker *ngFor="let pos of positions" [position]="pos"></marker>
+  </ng2-map>
+</div>
