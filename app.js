@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Import Node Modules
 const express         = require('express'); // Web Framework for NodeJS
 const app             = express(); // Initiate Express Application
@@ -10,6 +11,13 @@ const bodyParser      = require('body-parser');
 const cors            = require('cors');
 const passport        = require('passport');
 const social          = require('./passport/passport')(app, passport);
+=======
+const express = require('express');
+const app     = express();
+const mongoose = require('mongoose');
+const config = require('./config/database');
+const path = require('path');
+>>>>>>> server-setup
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.uri, (err) => {
@@ -21,6 +29,7 @@ mongoose.connect(config.uri, (err) => {
   }
 });
 
+<<<<<<< HEAD
 app.use(cors({
   origin: 'http://localhost:4200'
 }));
@@ -34,6 +43,10 @@ app.use(express.static(__dirname + '/client/dist'));
 app.use('/api', api);
 
 // Connect Server to Angular 2 Index.html
+=======
+app.use(express.static(__dirname + '/client/dist/'));
+
+>>>>>>> server-setup
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/dist/index.html'));
 });
